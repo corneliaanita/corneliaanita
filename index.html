@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX CALCULATOR</title>
+    <span class="watermark">~Cornelia~</span>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="calculator-title">Matrix Calculator</h1>
+        <div class="matrix-container">
+            <div class="matrix">
+                <h2>Matrix A</h2>
+                <table id="matrix1">
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m1r1c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r1c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r1c3" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m1r2c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r2c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r2c3" value=""></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m1r3c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r3c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m1r3c3" value=""></td> 
+                    </tr>
+                </table>
+            </div>
+            <div class="matrix">
+                <h2>Matrix B</h2>
+                <table id="matrix2">
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m2r1c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r1c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r1c3" value=""></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m2r2c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r2c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r2c3" value=""></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="number" class="input-matrix" id="m2r3c1" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r3c2" value=""></td>
+                        <td><input type="number" class="input-matrix" id="m2r3c3" value=""></td> 
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <input type="button" class="operation" value="+" onclick="calculate('add')">
+            <input type="button" class="operation" value="-" onclick="calculate('subtract')">
+            <input type="button" class="operation" value="x" onclick="calculate('multiply')">
+            <input type="button" class="operation" value="Clear" onclick="clearInputs()">
+        </div>
+        <table id="result" class="matrix">
+            <tr>
+                <td>
+                    <input type="number" class="input-matrix" id="result-1" disabled>
+                    <span id="process-1"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-2" disabled>
+                    <span id="process-2"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-3" disabled>
+                    <span id="process-3"></span> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" class="input-matrix" id="result-4" disabled>
+                    <span id="process-4"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-5" disabled>
+                    <span id="process-5"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-6" disabled>
+                    <span id="process-6"></span> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" class="input-matrix" id="result-7" disabled>
+                    <span id="process-7"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-8" disabled>
+                    <span id="process-8"></span> 
+                </td>
+                <td>
+                    <input type="number" class="input-matrix" id="result-9" disabled>
+                    <span id="process-9"></span> 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
